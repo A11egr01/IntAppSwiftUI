@@ -9,4 +9,4 @@
 import SwiftUI
 
 let screen = UIScreen.main.bounds
-var isScreenTall = screen.height > 736 ? true : false
+var isScreenTall = screen.height > 906 ? true : false
