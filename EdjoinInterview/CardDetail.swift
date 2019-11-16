@@ -9,33 +9,46 @@
 import SwiftUI
 
 struct CardDetail: View {
-    @State var showCertificates = false
+    @State var goToLogin = false
     @State var viewState = CGSize.zero
-    @State var goToPrevScreen = false
+    @State var goToOverview = false
     @State var items = 3
     @State var arrayOfCards = [1,2,3]
-    @State var showPrevScreen = false
+    @State var t = true
 
     var body: some View {
-
         ZStack {
             Color(#colorLiteral(red: 0.2923514071, green: 0.6221273317, blue: 0.9437338083, alpha: 1))
                 .edgesIgnoringSafeArea(.all)
-            Text("Hello, CardDetail!")
-            MenuRightDetail(showCertificates: $showCertificates, showLogout: $goToPrevScreen, showPrevScreen: $showPrevScreen, items: $items, arrayOfCards: $arrayOfCards)
-            if showCertificates {
-                                Login(show: $showCertificates)
-//                Overview()
-//                    .opacity(showLogout ? 1 : 0)
-//                    .offset(y: showLogout ? 0 : 20)
+            
+            VStack {
+                CategoriesTitles()
+                    .padding(.top, 85)
+                Divider()
+                    .foregroundColor(.red)
+//                Spacer()
+                ScrollView{
+                    ForEach (arrayOfCards, id: \.self) {_ in
+                        ApplicantRow()
+                    }
+                }
+    
+                Spacer()
+            }
+            
+            MenuRightDetail(gTPS: $goToLogin, showLogout: $goToOverview, items: $items, arrayOfCards: $arrayOfCards)
+            
+            if goToLogin {
+                Login(show: $goToLogin)
+                    .opacity(goToLogin ? 1 : 0)
+                    .offset(y: goToLogin ? 0 : 20)
                     .animation(Animation.easeInOut)
             }
-            if goToPrevScreen {
-                //                Login(show: $showPrevScreen)
+            if goToOverview {
                 Overview()
-                    .opacity(goToPrevScreen ? 1 : 0)
-                    .offset(y: goToPrevScreen ? 0 : 20)
-                    .animation(Animation.easeInOut)
+                    .opacity(goToOverview ? 1 : 0)
+                    .offset(y: goToOverview ? 0 : 20)
+                    .animation(Animation.easeIn)
             }
             
             
@@ -50,10 +63,9 @@ struct CardDetail_Previews: PreviewProvider {
 }
 
 struct MenuRightDetail : View {
-    @Binding var showCertificates: Bool
+    @Binding var gTPS: Bool
     @State var showUpdateList = false
     @Binding var showLogout: Bool
-    @Binding var showPrevScreen: Bool
     @Binding var items: Int
     @Binding var arrayOfCards: [Int]
 
@@ -68,7 +80,8 @@ struct MenuRightDetail : View {
                     .foregroundColor(.primary)
                     .cornerRadius(9)
                     .shadow(color: Color("buttonShadow"), radius: 10, x: 0, y: 10)
-                
+                Text("It is, CardDetail!")
+
                 Spacer()
                 Text("\(items)")
 //                if showUpdateList {
@@ -94,7 +107,7 @@ struct MenuRightDetail : View {
                     .foregroundColor(.primary)
                     .cornerRadius(9)
                     .shadow(color: Color("buttonShadow"), radius: 10, x: 0, y: 10)
-                    .onTapGesture { self.showCertificates.toggle() }
+                    .onTapGesture { self.gTPS.toggle() }
             }
             .padding().offset(y: 5)
             
@@ -105,3 +118,66 @@ struct MenuRightDetail : View {
 
 }
 
+
+struct CategoriesTitles: View {
+    var body: some View {
+        HStack(alignment: .top) {
+            VStack(alignment: .leading) {
+                Text("Applicant")
+                Text("Name")
+                    .bold()
+//                Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1))
+            }
+            .padding(.leading, 10)
+            Spacer()
+            
+            VStack(alignment: .leading) {
+                Text("Interview")
+                Text("Time")
+                    .bold()
+//                Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1))
+            }
+            Spacer()
+            
+            VStack(alignment: .leading) {
+                Text("Interview")
+                Text("Status")
+                    .bold()
+            }
+            Spacer()
+            
+            VStack(alignment: .leading) {
+                Text("Interview")
+                Text("Score")
+                    .bold()
+            }
+            .padding(.trailing, 10)
+        }
+    }
+}
+
+struct ApplicantRow: View {
+    var body: some View {
+        HStack {
+            VStack {
+                Text("First Name")
+                    .foregroundColor(Color(#colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)))
+                Text("Last Name")
+                    .bold()
+                    .foregroundColor(Color(#colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)))
+            }
+            .padding(.leading, 10)
+            Spacer()
+            Text("10/4/2019 \n9:00 am")
+                .foregroundColor(Color(#colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)))
+            Spacer()
+            Text("Pending")
+                .foregroundColor(Color(#colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)))
+            Spacer()
+            Text("001")
+                .foregroundColor(Color(#colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)))
+                .padding(.trailing, 50)
+            
+        }
+    }
+}
