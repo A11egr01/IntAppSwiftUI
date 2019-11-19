@@ -10,3 +10,4 @@ import SwiftUI
 
 let screen = UIScreen.main.bounds
 var isScreenTall = screen.height > 906 ? true : false
+var leftSideSize = screen.width / 3

@@ -19,6 +19,7 @@
 		FA498645237DD40600E74F35 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA498644237DD40600E74F35 /* Helpers.swift */; };
 		FA498647237DE27200E74F35 /* Overview.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA498646237DE27100E74F35 /* Overview.swift */; };
 		FA498649237E183800E74F35 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA498648237E183800E74F35 /* CardView.swift */; };
+		FA80796B23834D6000D6246A /* InterviewScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA80796A23834D6000D6246A /* InterviewScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		FA498644237DD40600E74F35 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		FA498646237DE27100E74F35 /* Overview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Overview.swift; sourceTree = "<group>"; };
 		FA498648237E183800E74F35 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		FA80796A23834D6000D6246A /* InterviewScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterviewScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 				FA498648237E183800E74F35 /* CardView.swift */,
 				FA498646237DE27100E74F35 /* Overview.swift */,
 				FA1A950F237F5CBD0056DF74 /* CardDetail.swift */,
+				FA80796A23834D6000D6246A /* InterviewScreen.swift */,
 				FA498632237DC92100E74F35 /* Assets.xcassets */,
 				FA498642237DCAFD00E74F35 /* BlurView.swift */,
 				FA498637237DC92100E74F35 /* LaunchScreen.storyboard */,
@@ -171,6 +174,7 @@
 				FA498641237DC96600E74F35 /* Login.swift in Sources */,
 				FA49862F237DC91E00E74F35 /* EdjoinInterview.xcdatamodeld in Sources */,
 				FA49862C237DC91E00E74F35 /* SceneDelegate.swift in Sources */,
+				FA80796B23834D6000D6246A /* InterviewScreen.swift in Sources */,
 				FA498643237DCAFD00E74F35 /* BlurView.swift in Sources */,
 				FA1A9510237F5CBD0056DF74 /* CardDetail.swift in Sources */,
 			);

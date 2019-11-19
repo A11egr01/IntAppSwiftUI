@@ -15,9 +15,11 @@ struct CardDetail: View {
     @State var items = 3
     @State var arrayOfCards = [1,2,3]
     @State var t = true
+    @State private var applicantRowClicked = false
 
     var body: some View {
         ZStack {
+
             Color(#colorLiteral(red: 0.2923514071, green: 0.6221273317, blue: 0.9437338083, alpha: 1))
                 .edgesIgnoringSafeArea(.all)
             
@@ -26,13 +28,22 @@ struct CardDetail: View {
                     .padding(.top, 85)
                 Divider()
                     .foregroundColor(.red)
-//                Spacer()
+                //                Spacer()
+
                 ScrollView{
                     ForEach (arrayOfCards, id: \.self) {_ in
                         ApplicantRow()
+                            .onTapGesture {
+                                self.applicantRowClicked.toggle()
+                            }
+//                            if applicantRowClicked {
+//                                Text("haha")
+//                            }
+                            .padding(.bottom, 5)
+                            .frame(minWidth: 0, maxWidth: .infinity)
+                        
                     }
                 }
-    
                 Spacer()
             }
             
@@ -50,9 +61,11 @@ struct CardDetail: View {
                     .offset(y: goToOverview ? 0 : 20)
                     .animation(Animation.easeIn)
             }
-            
-            
+            if applicantRowClicked {
+                InterviewScreen()
+            }
         }
+
     }
 }
 
@@ -157,27 +170,43 @@ struct CategoriesTitles: View {
 }
 
 struct ApplicantRow: View {
+//    @State private var applicantRowClicked = false
+
     var body: some View {
-        HStack {
-            VStack {
-                Text("First Name")
+        VStack {
+
+            HStack {
+                VStack {
+                    Text("First Name")
+                        .foregroundColor(Color(#colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)))
+                    Text("Last Name")
+                        .bold()
+                        .foregroundColor(Color(#colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)))
+                }
+                .padding(.leading, 10)
+                Spacer()
+                VStack(alignment: .leading) {
+                    Text("10/4/2019")
+                        .foregroundColor(Color(#colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)))
+                    Text("9:00 am")
+                        .foregroundColor(Color(#colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)))
+                }
+                Spacer()
+                Text("Pending   ")
                     .foregroundColor(Color(#colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)))
-                Text("Last Name")
-                    .bold()
+                Spacer()
+                Text("001")
                     .foregroundColor(Color(#colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)))
+                    .padding(.trailing, 50)
             }
-            .padding(.leading, 10)
-            Spacer()
-            Text("10/4/2019 \n9:00 am")
-                .foregroundColor(Color(#colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)))
-            Spacer()
-            Text("Pending")
-                .foregroundColor(Color(#colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)))
-            Spacer()
-            Text("001")
-                .foregroundColor(Color(#colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)))
-                .padding(.trailing, 50)
-            
+//            .onTapGesture {
+//                self.applicantRowClicked.toggle()
+//            }
+//            if applicantRowClicked {
+//                Text("haha")
+//            }
+            Divider()
         }
     }
+
 }

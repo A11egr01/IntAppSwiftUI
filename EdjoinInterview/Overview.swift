@@ -124,9 +124,11 @@ struct TableView: View {
             }
             .padding(.top, 75)
         }
+
     }
     func increment(numberOfPeople: Binding<Int>) -> CardView {
         a += 1
         return CardView(numberOfPeople: self.$items)
+
     }
 }

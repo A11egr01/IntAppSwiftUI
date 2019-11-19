@@ -48,6 +48,7 @@ struct CardView: View {
             0, maxHeight: 200)
         .background(Color(#colorLiteral(red: 0.2456268668, green: 0.5129396915, blue: 0.7682726383, alpha: 1)))
         .cornerRadius(20)
+        
     }
 }
 
