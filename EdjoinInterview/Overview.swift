@@ -71,6 +71,7 @@ struct MenuRight : View {
         return VStack {
             HStack(spacing: 12) {
                 Spacer()
+                
                 Text("\(items)")
 //                if showUpdateList {
 //                    TableView(items: $items)
@@ -88,6 +89,7 @@ struct MenuRight : View {
 //                            TableView(items: self.$items)
 //                    }
                 }
+
                 
                 VStack { Image(systemName: "arrowshape.turn.up.right.fill") }
                     .frame(width: 44, height: 44)

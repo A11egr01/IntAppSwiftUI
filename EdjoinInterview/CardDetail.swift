@@ -81,6 +81,7 @@ struct MenuRightDetail : View {
     @Binding var showLogout: Bool
     @Binding var items: Int
     @Binding var arrayOfCards: [Int]
+    @State var showStatList = false
 
     var body: some View {
 
@@ -96,6 +97,17 @@ struct MenuRightDetail : View {
                 Text("It is, CardDetail!")
 
                 Spacer()
+                Button(action: { self.showStatList.toggle() }) {
+                    VStack { Image(systemName: "person.3.fill") }
+                        .foregroundColor(.primary)
+                        .frame(width: 44, height: 44)
+                        .background(Color("button"))
+                        .cornerRadius(22)
+                        .shadow(color: Color("buttonShadow"), radius: 10, x: 0, y: 10)
+                        .sheet(isPresented: $showStatList) {
+                            StatisticsView()
+                    }
+                }
                 Text("\(items)")
 //                if showUpdateList {
 //                    TableView(items: $items)

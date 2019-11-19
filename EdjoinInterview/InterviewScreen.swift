@@ -11,18 +11,107 @@ import SwiftUI
 struct InterviewScreen: View {
     @State var goToOverview = false
     @State var goToLogin = false
+    @State var showFinishAnimation = false
+
+    //text fields
+    @State private var name: String = ""
 
     var body: some View {
         ZStack {
+            
             Color(#colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1))
                 .edgesIgnoringSafeArea(.all)
-            MenuRightInterviewScreen(gTPS: $goToLogin, showLogout: $goToOverview)
+            MenuTopInterviewScreen(gTPS: $goToLogin, showLogout: $goToOverview)
             HStack {
-                leftScreenSide()
+                leftScreenSide(showFinishAnimation: $showFinishAnimation)
                     .padding(.top, 100)
-                .padding(.leading, 15)
+                    .padding(.leading, 15)
                 VerticalDivider()
-                Spacer()
+                //                Spacer()
+                VStack {
+                    Text("Questions")
+                        .foregroundColor(Color(#colorLiteral(red: 0.3098039329, green: 0.01568627544, blue: 0.1294117719, alpha: 1)))
+                        .font(.title)
+                        .fontWeight(.thin)
+                        //                    .foregroundColor(Color.red)
+                        .multilineTextAlignment(.center)
+                        .padding(.leading)
+                    .padding(.top, 75)
+
+                    Divider()
+                    // exp
+                    ScrollView{
+                        VStack {
+                            HStack {
+                                Text("Experience")
+                                Spacer()
+                                    .font(.subheadline)
+                            }
+                            TextField("Enter your answer", text: $name)
+                                .lineLimit(4)
+                                .textFieldStyle(RoundedBorderTextFieldStyle())
+                                .cornerRadius(7)
+                                .padding(.trailing, 50)
+
+                            .multilineTextAlignment(.leading)
+                        }
+                        VStack {
+                             HStack {
+                                 Text("Education")
+                                 Spacer()
+                                     .font(.subheadline)
+                             }
+                             TextField("Enter your answer", text: $name)
+                                 .lineLimit(4)
+                                 .textFieldStyle(RoundedBorderTextFieldStyle())
+                                 .cornerRadius(7)
+                                .padding(.trailing, 50)
+                             .multilineTextAlignment(.leading)
+                         }
+                        VStack {
+                             HStack {
+                                 Text("Why Do you want this job?")
+                                 Spacer()
+                                     .font(.subheadline)
+                             }
+                             TextField("Enter your answer", text: $name)
+                                 .lineLimit(4)
+                                 .textFieldStyle(RoundedBorderTextFieldStyle())
+                                 .cornerRadius(7)
+                                .padding(.trailing, 50)
+                             .multilineTextAlignment(.leading)
+                         }
+                        VStack {
+                             HStack {
+                                 Text("Why should We hire you?")
+                                 Spacer()
+                                     .font(.subheadline)
+                             }
+                             TextField("Enter your answer", text: $name)
+                                 .lineLimit(4)
+                                 .textFieldStyle(RoundedBorderTextFieldStyle())
+                                 .cornerRadius(7)
+                                .padding(.trailing, 50)
+
+                             .multilineTextAlignment(.leading)
+                         }
+                        VStack {
+                             HStack {
+                                 Text("Overview")
+                                 Spacer()
+                                     .font(.subheadline)
+                             }
+                             TextField("Enter your answer", text: $name)
+                                 .lineLimit(4)
+                                 .textFieldStyle(RoundedBorderTextFieldStyle())
+                                 .cornerRadius(7)
+                                .padding(.trailing, 50)
+
+                             .multilineTextAlignment(.leading)
+                         }
+                    }
+                }
+                
             }
             if goToLogin {
                 Login(show: $goToLogin)
@@ -36,9 +125,18 @@ struct InterviewScreen: View {
                     .offset(y: goToOverview ? 0 : 20)
                     .animation(Animation.easeIn)
             }
+            if showFinishAnimation {
+                ModalView()
+                    .opacity(showFinishAnimation ? 1 : 0.1)
+//                    .rotation3DEffect(Angle.degrees(10), axis: (x: 40, y: 20, z: 40))
+                    .onAppear() {
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
+                            self.showFinishAnimation.toggle()
+                            self.goToLogin.toggle()
+                        }
+                }
+            }
         }
-
-
     }
 }
 
@@ -49,20 +147,26 @@ struct InterviewScreen_Previews: PreviewProvider {
 }
 
 struct leftScreenSide: View {
+    @Binding var showFinishAnimation: Bool
     var listOfDocuments = ["Resume", "Reference 1","Reference 2","Reference 3","Personal Statement"]
     var body: some View {
-
         VStack(alignment: .leading) {
-            Button(action: {}) {
+            Button(action: { self.showFinishAnimation.toggle()}) {
                 VStack { Text("Finish") }
                     .foregroundColor(.primary)
                     .frame(width: leftSideSize * 0.9, height: 44)
                     .background(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                     .cornerRadius(20)
                     .shadow(color: Color("buttonShadow"), radius: 10, x: 0, y: 10)
-                //                        .sheet(isPresented: $showUpdateList) {
-                //                            TableView(items: self.$items)
-                //                    }
+//                    .sheet(isPresented: $showFinishAnimation) {
+//                    ModalView()
+////                       LottieView(filename: "TwitterHeart")
+//                        .onTapGesture {
+//                            self.showFinishAnimation.toggle()
+//                        }
+////                        .frame(width: 30, height: 30, alignment: Alignment.center)
+//                        //                                            TableView(items: self.$items)
+//                }
             }
             VStack(alignment: .leading) {
                 HStack(alignment: .top) {
@@ -147,7 +251,7 @@ struct VerticalDivider: View {
     }
 }
 
-struct MenuRightInterviewScreen : View {
+struct MenuTopInterviewScreen : View {
     @Binding var gTPS: Bool
     @State var showUpdateList = false
     @Binding var showLogout: Bool
@@ -173,7 +277,7 @@ struct MenuRightInterviewScreen : View {
 //                        .font(.largeTitle)
 //                }
                 Button(action: {}) {
-                    VStack { Image(systemName: "arrow.clockwise") }
+                    VStack { Image(systemName: "lock.shield") }
                         .foregroundColor(.primary)
                         .frame(width: 44, height: 44)
                         .background(Color("button"))

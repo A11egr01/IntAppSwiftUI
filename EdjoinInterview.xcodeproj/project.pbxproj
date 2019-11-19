@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -20,6 +20,68 @@
 		FA498647237DE27200E74F35 /* Overview.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA498646237DE27100E74F35 /* Overview.swift */; };
 		FA498649237E183800E74F35 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA498648237E183800E74F35 /* CardView.swift */; };
 		FA80796B23834D6000D6246A /* InterviewScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA80796A23834D6000D6246A /* InterviewScreen.swift */; };
+		FAA275F5238464170047EB34 /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA275F4238464170047EB34 /* TextView.swift */; };
+		FAA275F723846ECA0047EB34 /* StatisticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA275F623846ECA0047EB34 /* StatisticsView.swift */; };
+		FAA2799D238475C10047EB34 /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA2799C238475C10047EB34 /* LottieView.swift */; };
+		FAA279A02384770C0047EB34 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = FAA2799F2384770C0047EB34 /* Lottie */; };
+		FAA279A2238477F30047EB34 /* ModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA279A1238477F30047EB34 /* ModalView.swift */; };
+		FAA27A1423847AF00047EB34 /* Switch.json in Resources */ = {isa = PBXBuildFile; fileRef = FAA279DC23847AF00047EB34 /* Switch.json */; };
+		FAA27A1523847AF00047EB34 /* TwitterHeart.json in Resources */ = {isa = PBXBuildFile; fileRef = FAA279DD23847AF00047EB34 /* TwitterHeart.json */; };
+		FAA27A1623847AF00047EB34 /* 9squares-AlBoardman.json in Resources */ = {isa = PBXBuildFile; fileRef = FAA279DE23847AF00047EB34 /* 9squares-AlBoardman.json */; };
+		FAA27A1723847AF00047EB34 /* MotionCorpse-Jrcanest.json in Resources */ = {isa = PBXBuildFile; fileRef = FAA279DF23847AF00047EB34 /* MotionCorpse-Jrcanest.json */; };
+		FAA27A1823847AF00047EB34 /* TwitterHeartButton.json in Resources */ = {isa = PBXBuildFile; fileRef = FAA279E023847AF00047EB34 /* TwitterHeartButton.json */; };
+		FAA27A1923847AF00047EB34 /* T.json in Resources */ = {isa = PBXBuildFile; fileRef = FAA279E223847AF00047EB34 /* T.json */; };
+		FAA27A1A23847AF00047EB34 /* A.json in Resources */ = {isa = PBXBuildFile; fileRef = FAA279E323847AF00047EB34 /* A.json */; };
+		FAA27A1B23847AF00047EB34 /* X.json in Resources */ = {isa = PBXBuildFile; fileRef = FAA279E423847AF00047EB34 /* X.json */; };
+		FAA27A1C23847AF00047EB34 /* BlinkingCursor.json in Resources */ = {isa = PBXBuildFile; fileRef = FAA279E523847AF00047EB34 /* BlinkingCursor.json */; };
+		FAA27A1D23847AF00047EB34 /* M.json in Resources */ = {isa = PBXBuildFile; fileRef = FAA279E623847AF00047EB34 /* M.json */; };
+		FAA27A1E23847AF00047EB34 /* L.json in Resources */ = {isa = PBXBuildFile; fileRef = FAA279E723847AF00047EB34 /* L.json */; };
+		FAA27A1F23847AF00047EB34 /* Y.json in Resources */ = {isa = PBXBuildFile; fileRef = FAA279E823847AF00047EB34 /* Y.json */; };
+		FAA27A2023847AF00047EB34 /* U.json in Resources */ = {isa = PBXBuildFile; fileRef = FAA279E923847AF00047EB34 /* U.json */; };
+		FAA27A2123847AF00047EB34 /* K.json in Resources */ = {isa = PBXBuildFile; fileRef = FAA279EA23847AF00047EB34 /* K.json */; };
+		FAA27A2223847AF00047EB34 /* R.json in Resources */ = {isa = PBXBuildFile; fileRef = FAA279EB23847AF00047EB34 /* R.json */; };
+		FAA27A2323847AF00047EB34 /* G.json in Resources */ = {isa = PBXBuildFile; fileRef = FAA279EC23847AF00047EB34 /* G.json */; };
+		FAA27A2423847AF00047EB34 /* F.json in Resources */ = {isa = PBXBuildFile; fileRef = FAA279ED23847AF00047EB34 /* F.json */; };
+		FAA27A2523847AF00047EB34 /* S.json in Resources */ = {isa = PBXBuildFile; fileRef = FAA279EE23847AF00047EB34 /* S.json */; };
+		FAA27A2623847AF00047EB34 /* J.json in Resources */ = {isa = PBXBuildFile; fileRef = FAA279EF23847AF00047EB34 /* J.json */; };
+		FAA27A2723847AF00047EB34 /* I.json in Resources */ = {isa = PBXBuildFile; fileRef = FAA279F023847AF00047EB34 /* I.json */; };
+		FAA27A2823847AF00047EB34 /* E.json in Resources */ = {isa = PBXBuildFile; fileRef = FAA279F123847AF00047EB34 /* E.json */; };
+		FAA27A2923847AF00047EB34 /* Apostrophe.json in Resources */ = {isa = PBXBuildFile; fileRef = FAA279F223847AF00047EB34 /* Apostrophe.json */; };
+		FAA27A2A23847AF00047EB34 /* P.json in Resources */ = {isa = PBXBuildFile; fileRef = FAA279F323847AF00047EB34 /* P.json */; };
+		FAA27A2B23847AF00047EB34 /* Q.json in Resources */ = {isa = PBXBuildFile; fileRef = FAA279F423847AF00047EB34 /* Q.json */; };
+		FAA27A2C23847AF00047EB34 /* D.json in Resources */ = {isa = PBXBuildFile; fileRef = FAA279F523847AF00047EB34 /* D.json */; };
+		FAA27A2D23847AF00047EB34 /* Colon.json in Resources */ = {isa = PBXBuildFile; fileRef = FAA279F623847AF00047EB34 /* Colon.json */; };
+		FAA27A2E23847AF00047EB34 /* H.json in Resources */ = {isa = PBXBuildFile; fileRef = FAA279F723847AF00047EB34 /* H.json */; };
+		FAA27A2F23847AF00047EB34 /* C.json in Resources */ = {isa = PBXBuildFile; fileRef = FAA279F823847AF00047EB34 /* C.json */; };
+		FAA27A3023847AF00047EB34 /* V.json in Resources */ = {isa = PBXBuildFile; fileRef = FAA279F923847AF00047EB34 /* V.json */; };
+		FAA27A3123847AF00047EB34 /* Comma.json in Resources */ = {isa = PBXBuildFile; fileRef = FAA279FA23847AF00047EB34 /* Comma.json */; };
+		FAA27A3223847AF00047EB34 /* O.json in Resources */ = {isa = PBXBuildFile; fileRef = FAA279FB23847AF00047EB34 /* O.json */; };
+		FAA27A3323847AF00047EB34 /* Z.json in Resources */ = {isa = PBXBuildFile; fileRef = FAA279FC23847AF00047EB34 /* Z.json */; };
+		FAA27A3423847AF00047EB34 /* N.json in Resources */ = {isa = PBXBuildFile; fileRef = FAA279FD23847AF00047EB34 /* N.json */; };
+		FAA27A3523847AF00047EB34 /* W.json in Resources */ = {isa = PBXBuildFile; fileRef = FAA279FE23847AF00047EB34 /* W.json */; };
+		FAA27A3623847AF00047EB34 /* B.json in Resources */ = {isa = PBXBuildFile; fileRef = FAA279FF23847AF00047EB34 /* B.json */; };
+		FAA27A3723847AF00047EB34 /* HamburgerArrow.json in Resources */ = {isa = PBXBuildFile; fileRef = FAA27A0023847AF00047EB34 /* HamburgerArrow.json */; };
+		FAA27A3823847AF00047EB34 /* vcTransition1.json in Resources */ = {isa = PBXBuildFile; fileRef = FAA27A0123847AF00047EB34 /* vcTransition1.json */; };
+		FAA27A3923847AF00047EB34 /* LottieLogo2.json in Resources */ = {isa = PBXBuildFile; fileRef = FAA27A0223847AF00047EB34 /* LottieLogo2.json */; };
+		FAA27A3A23847AF00047EB34 /* Boat_Loader.json in Resources */ = {isa = PBXBuildFile; fileRef = FAA27A0323847AF00047EB34 /* Boat_Loader.json */; };
+		FAA27A3B23847AF00047EB34 /* GeometryTransformTest.json in Resources */ = {isa = PBXBuildFile; fileRef = FAA27A0423847AF00047EB34 /* GeometryTransformTest.json */; };
+		FAA27A3C23847AF00047EB34 /* Watermelon.json in Resources */ = {isa = PBXBuildFile; fileRef = FAA27A0523847AF00047EB34 /* Watermelon.json */; };
+		FAA27A3D23847AF00047EB34 /* Keypath.json in Resources */ = {isa = PBXBuildFile; fileRef = FAA27A0623847AF00047EB34 /* Keypath.json */; };
+		FAA27A3E23847AF00047EB34 /* IconTransitions.json in Resources */ = {isa = PBXBuildFile; fileRef = FAA27A0723847AF00047EB34 /* IconTransitions.json */; };
+		FAA27A3F23847AF00047EB34 /* vcTransition2.json in Resources */ = {isa = PBXBuildFile; fileRef = FAA27A0823847AF00047EB34 /* vcTransition2.json */; };
+		FAA27A4023847AF00047EB34 /* LottieLogo1.json in Resources */ = {isa = PBXBuildFile; fileRef = FAA27A0923847AF00047EB34 /* LottieLogo1.json */; };
+		FAA27A4123847AF00047EB34 /* base64Test.json in Resources */ = {isa = PBXBuildFile; fileRef = FAA27A0A23847AF00047EB34 /* base64Test.json */; };
+		FAA27A4223847AF00047EB34 /* Switch_States.json in Resources */ = {isa = PBXBuildFile; fileRef = FAA27A0B23847AF00047EB34 /* Switch_States.json */; };
+		FAA27A4323847AF00047EB34 /* FirstText.json in Resources */ = {isa = PBXBuildFile; fileRef = FAA27A0C23847AF00047EB34 /* FirstText.json */; };
+		FAA27A4423847AF00047EB34 /* setValueTest.json in Resources */ = {isa = PBXBuildFile; fileRef = FAA27A0D23847AF00047EB34 /* setValueTest.json */; };
+		FAA27A4523847AF00047EB34 /* Zoom.json in Resources */ = {isa = PBXBuildFile; fileRef = FAA27A0E23847AF00047EB34 /* Zoom.json */; };
+		FAA27A4623847AF00047EB34 /* keypathTest.json in Resources */ = {isa = PBXBuildFile; fileRef = FAA27A0F23847AF00047EB34 /* keypathTest.json */; };
+		FAA27A4723847AF00047EB34 /* PinJump.json in Resources */ = {isa = PBXBuildFile; fileRef = FAA27A1023847AF00047EB34 /* PinJump.json */; };
+		FAA27A4823847AF00047EB34 /* DisableNodesTest.json in Resources */ = {isa = PBXBuildFile; fileRef = FAA27A1123847AF00047EB34 /* DisableNodesTest.json */; };
+		FAA27A4923847AF00047EB34 /* LottieLogo1_masked.json in Resources */ = {isa = PBXBuildFile; fileRef = FAA27A1223847AF00047EB34 /* LottieLogo1_masked.json */; };
+		FAA27A4A23847AF00047EB34 /* timeremap.json in Resources */ = {isa = PBXBuildFile; fileRef = FAA27A1323847AF00047EB34 /* timeremap.json */; };
+		FAA27A4C2384AAAA0047EB34 /* Plane.json in Resources */ = {isa = PBXBuildFile; fileRef = FAA27A4B2384AAAA0047EB34 /* Plane.json */; };
+		FAA27A502384AC7C0047EB34 /* 8569-file-save.json in Resources */ = {isa = PBXBuildFile; fileRef = FAA27A4F2384AC7C0047EB34 /* 8569-file-save.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +100,67 @@
 		FA498646237DE27100E74F35 /* Overview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Overview.swift; sourceTree = "<group>"; };
 		FA498648237E183800E74F35 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		FA80796A23834D6000D6246A /* InterviewScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterviewScreen.swift; sourceTree = "<group>"; };
+		FAA275F4238464170047EB34 /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
+		FAA275F623846ECA0047EB34 /* StatisticsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsView.swift; sourceTree = "<group>"; };
+		FAA2799C238475C10047EB34 /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
+		FAA279A1238477F30047EB34 /* ModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalView.swift; sourceTree = "<group>"; };
+		FAA279DC23847AF00047EB34 /* Switch.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Switch.json; sourceTree = "<group>"; };
+		FAA279DD23847AF00047EB34 /* TwitterHeart.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TwitterHeart.json; sourceTree = "<group>"; };
+		FAA279DE23847AF00047EB34 /* 9squares-AlBoardman.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "9squares-AlBoardman.json"; sourceTree = "<group>"; };
+		FAA279DF23847AF00047EB34 /* MotionCorpse-Jrcanest.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "MotionCorpse-Jrcanest.json"; sourceTree = "<group>"; };
+		FAA279E023847AF00047EB34 /* TwitterHeartButton.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TwitterHeartButton.json; sourceTree = "<group>"; };
+		FAA279E223847AF00047EB34 /* T.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = T.json; sourceTree = "<group>"; };
+		FAA279E323847AF00047EB34 /* A.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = A.json; sourceTree = "<group>"; };
+		FAA279E423847AF00047EB34 /* X.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = X.json; sourceTree = "<group>"; };
+		FAA279E523847AF00047EB34 /* BlinkingCursor.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = BlinkingCursor.json; sourceTree = "<group>"; };
+		FAA279E623847AF00047EB34 /* M.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = M.json; sourceTree = "<group>"; };
+		FAA279E723847AF00047EB34 /* L.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = L.json; sourceTree = "<group>"; };
+		FAA279E823847AF00047EB34 /* Y.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Y.json; sourceTree = "<group>"; };
+		FAA279E923847AF00047EB34 /* U.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = U.json; sourceTree = "<group>"; };
+		FAA279EA23847AF00047EB34 /* K.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = K.json; sourceTree = "<group>"; };
+		FAA279EB23847AF00047EB34 /* R.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = R.json; sourceTree = "<group>"; };
+		FAA279EC23847AF00047EB34 /* G.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = G.json; sourceTree = "<group>"; };
+		FAA279ED23847AF00047EB34 /* F.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = F.json; sourceTree = "<group>"; };
+		FAA279EE23847AF00047EB34 /* S.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = S.json; sourceTree = "<group>"; };
+		FAA279EF23847AF00047EB34 /* J.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = J.json; sourceTree = "<group>"; };
+		FAA279F023847AF00047EB34 /* I.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = I.json; sourceTree = "<group>"; };
+		FAA279F123847AF00047EB34 /* E.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = E.json; sourceTree = "<group>"; };
+		FAA279F223847AF00047EB34 /* Apostrophe.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Apostrophe.json; sourceTree = "<group>"; };
+		FAA279F323847AF00047EB34 /* P.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = P.json; sourceTree = "<group>"; };
+		FAA279F423847AF00047EB34 /* Q.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Q.json; sourceTree = "<group>"; };
+		FAA279F523847AF00047EB34 /* D.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = D.json; sourceTree = "<group>"; };
+		FAA279F623847AF00047EB34 /* Colon.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Colon.json; sourceTree = "<group>"; };
+		FAA279F723847AF00047EB34 /* H.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = H.json; sourceTree = "<group>"; };
+		FAA279F823847AF00047EB34 /* C.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = C.json; sourceTree = "<group>"; };
+		FAA279F923847AF00047EB34 /* V.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = V.json; sourceTree = "<group>"; };
+		FAA279FA23847AF00047EB34 /* Comma.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Comma.json; sourceTree = "<group>"; };
+		FAA279FB23847AF00047EB34 /* O.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = O.json; sourceTree = "<group>"; };
+		FAA279FC23847AF00047EB34 /* Z.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Z.json; sourceTree = "<group>"; };
+		FAA279FD23847AF00047EB34 /* N.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = N.json; sourceTree = "<group>"; };
+		FAA279FE23847AF00047EB34 /* W.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = W.json; sourceTree = "<group>"; };
+		FAA279FF23847AF00047EB34 /* B.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = B.json; sourceTree = "<group>"; };
+		FAA27A0023847AF00047EB34 /* HamburgerArrow.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = HamburgerArrow.json; sourceTree = "<group>"; };
+		FAA27A0123847AF00047EB34 /* vcTransition1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = vcTransition1.json; sourceTree = "<group>"; };
+		FAA27A0223847AF00047EB34 /* LottieLogo2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LottieLogo2.json; sourceTree = "<group>"; };
+		FAA27A0323847AF00047EB34 /* Boat_Loader.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Boat_Loader.json; sourceTree = "<group>"; };
+		FAA27A0423847AF00047EB34 /* GeometryTransformTest.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = GeometryTransformTest.json; sourceTree = "<group>"; };
+		FAA27A0523847AF00047EB34 /* Watermelon.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Watermelon.json; sourceTree = "<group>"; };
+		FAA27A0623847AF00047EB34 /* Keypath.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Keypath.json; sourceTree = "<group>"; };
+		FAA27A0723847AF00047EB34 /* IconTransitions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = IconTransitions.json; sourceTree = "<group>"; };
+		FAA27A0823847AF00047EB34 /* vcTransition2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = vcTransition2.json; sourceTree = "<group>"; };
+		FAA27A0923847AF00047EB34 /* LottieLogo1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LottieLogo1.json; sourceTree = "<group>"; };
+		FAA27A0A23847AF00047EB34 /* base64Test.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = base64Test.json; sourceTree = "<group>"; };
+		FAA27A0B23847AF00047EB34 /* Switch_States.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Switch_States.json; sourceTree = "<group>"; };
+		FAA27A0C23847AF00047EB34 /* FirstText.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = FirstText.json; sourceTree = "<group>"; };
+		FAA27A0D23847AF00047EB34 /* setValueTest.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = setValueTest.json; sourceTree = "<group>"; };
+		FAA27A0E23847AF00047EB34 /* Zoom.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Zoom.json; sourceTree = "<group>"; };
+		FAA27A0F23847AF00047EB34 /* keypathTest.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = keypathTest.json; sourceTree = "<group>"; };
+		FAA27A1023847AF00047EB34 /* PinJump.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PinJump.json; sourceTree = "<group>"; };
+		FAA27A1123847AF00047EB34 /* DisableNodesTest.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DisableNodesTest.json; sourceTree = "<group>"; };
+		FAA27A1223847AF00047EB34 /* LottieLogo1_masked.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LottieLogo1_masked.json; sourceTree = "<group>"; };
+		FAA27A1323847AF00047EB34 /* timeremap.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = timeremap.json; sourceTree = "<group>"; };
+		FAA27A4B2384AAAA0047EB34 /* Plane.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Plane.json; sourceTree = "<group>"; };
+		FAA27A4F2384AC7C0047EB34 /* 8569-file-save.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "8569-file-save.json"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +168,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAA279A02384770C0047EB34 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,10 +201,16 @@
 				FA498646237DE27100E74F35 /* Overview.swift */,
 				FA1A950F237F5CBD0056DF74 /* CardDetail.swift */,
 				FA80796A23834D6000D6246A /* InterviewScreen.swift */,
+				FAA275F623846ECA0047EB34 /* StatisticsView.swift */,
 				FA498632237DC92100E74F35 /* Assets.xcassets */,
 				FA498642237DCAFD00E74F35 /* BlurView.swift */,
 				FA498637237DC92100E74F35 /* LaunchScreen.storyboard */,
+				FAA27A4B2384AAAA0047EB34 /* Plane.json */,
 				FA49863A237DC92100E74F35 /* Info.plist */,
+				FAA279DB23847AF00047EB34 /* TestAnimations */,
+				FAA279A1238477F30047EB34 /* ModalView.swift */,
+				FAA275F4238464170047EB34 /* TextView.swift */,
+				FAA2799C238475C10047EB34 /* LottieView.swift */,
 				FA498644237DD40600E74F35 /* Helpers.swift */,
 				FA49862D237DC91E00E74F35 /* EdjoinInterview.xcdatamodeld */,
 				FA498634237DC92100E74F35 /* Preview Content */,
@@ -94,6 +224,77 @@
 				FA498635237DC92100E74F35 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FAA279DB23847AF00047EB34 /* TestAnimations */ = {
+			isa = PBXGroup;
+			children = (
+				FAA279DC23847AF00047EB34 /* Switch.json */,
+				FAA279DD23847AF00047EB34 /* TwitterHeart.json */,
+				FAA279DE23847AF00047EB34 /* 9squares-AlBoardman.json */,
+				FAA279DF23847AF00047EB34 /* MotionCorpse-Jrcanest.json */,
+				FAA279E023847AF00047EB34 /* TwitterHeartButton.json */,
+				FAA279E123847AF00047EB34 /* TypeFace */,
+				FAA27A0023847AF00047EB34 /* HamburgerArrow.json */,
+				FAA27A0123847AF00047EB34 /* vcTransition1.json */,
+				FAA27A0223847AF00047EB34 /* LottieLogo2.json */,
+				FAA27A0323847AF00047EB34 /* Boat_Loader.json */,
+				FAA27A0423847AF00047EB34 /* GeometryTransformTest.json */,
+				FAA27A0523847AF00047EB34 /* Watermelon.json */,
+				FAA27A4F2384AC7C0047EB34 /* 8569-file-save.json */,
+				FAA27A0623847AF00047EB34 /* Keypath.json */,
+				FAA27A0723847AF00047EB34 /* IconTransitions.json */,
+				FAA27A0823847AF00047EB34 /* vcTransition2.json */,
+				FAA27A0923847AF00047EB34 /* LottieLogo1.json */,
+				FAA27A0A23847AF00047EB34 /* base64Test.json */,
+				FAA27A0B23847AF00047EB34 /* Switch_States.json */,
+				FAA27A0C23847AF00047EB34 /* FirstText.json */,
+				FAA27A0D23847AF00047EB34 /* setValueTest.json */,
+				FAA27A0E23847AF00047EB34 /* Zoom.json */,
+				FAA27A0F23847AF00047EB34 /* keypathTest.json */,
+				FAA27A1023847AF00047EB34 /* PinJump.json */,
+				FAA27A1123847AF00047EB34 /* DisableNodesTest.json */,
+				FAA27A1223847AF00047EB34 /* LottieLogo1_masked.json */,
+				FAA27A1323847AF00047EB34 /* timeremap.json */,
+			);
+			path = TestAnimations;
+			sourceTree = "<group>";
+		};
+		FAA279E123847AF00047EB34 /* TypeFace */ = {
+			isa = PBXGroup;
+			children = (
+				FAA279E223847AF00047EB34 /* T.json */,
+				FAA279E323847AF00047EB34 /* A.json */,
+				FAA279E423847AF00047EB34 /* X.json */,
+				FAA279E523847AF00047EB34 /* BlinkingCursor.json */,
+				FAA279E623847AF00047EB34 /* M.json */,
+				FAA279E723847AF00047EB34 /* L.json */,
+				FAA279E823847AF00047EB34 /* Y.json */,
+				FAA279E923847AF00047EB34 /* U.json */,
+				FAA279EA23847AF00047EB34 /* K.json */,
+				FAA279EB23847AF00047EB34 /* R.json */,
+				FAA279EC23847AF00047EB34 /* G.json */,
+				FAA279ED23847AF00047EB34 /* F.json */,
+				FAA279EE23847AF00047EB34 /* S.json */,
+				FAA279EF23847AF00047EB34 /* J.json */,
+				FAA279F023847AF00047EB34 /* I.json */,
+				FAA279F123847AF00047EB34 /* E.json */,
+				FAA279F223847AF00047EB34 /* Apostrophe.json */,
+				FAA279F323847AF00047EB34 /* P.json */,
+				FAA279F423847AF00047EB34 /* Q.json */,
+				FAA279F523847AF00047EB34 /* D.json */,
+				FAA279F623847AF00047EB34 /* Colon.json */,
+				FAA279F723847AF00047EB34 /* H.json */,
+				FAA279F823847AF00047EB34 /* C.json */,
+				FAA279F923847AF00047EB34 /* V.json */,
+				FAA279FA23847AF00047EB34 /* Comma.json */,
+				FAA279FB23847AF00047EB34 /* O.json */,
+				FAA279FC23847AF00047EB34 /* Z.json */,
+				FAA279FD23847AF00047EB34 /* N.json */,
+				FAA279FE23847AF00047EB34 /* W.json */,
+				FAA279FF23847AF00047EB34 /* B.json */,
+			);
+			path = TypeFace;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -112,6 +313,9 @@
 			dependencies = (
 			);
 			name = EdjoinInterview;
+			packageProductDependencies = (
+				FAA2799F2384770C0047EB34 /* Lottie */,
+			);
 			productName = EdjoinInterview;
 			productReference = FA498626237DC91E00E74F35 /* EdjoinInterview.app */;
 			productType = "com.apple.product-type.application";
@@ -140,6 +344,9 @@
 				Base,
 			);
 			mainGroup = FA49861D237DC91E00E74F35;
+			packageReferences = (
+				FAA2799E2384770B0047EB34 /* XCRemoteSwiftPackageReference "lottie-ios" */,
+			);
 			productRefGroup = FA498627237DC91E00E74F35 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -154,9 +361,66 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAA27A2E23847AF00047EB34 /* H.json in Resources */,
+				FAA27A3223847AF00047EB34 /* O.json in Resources */,
+				FAA27A3123847AF00047EB34 /* Comma.json in Resources */,
+				FAA27A2A23847AF00047EB34 /* P.json in Resources */,
+				FAA27A2423847AF00047EB34 /* F.json in Resources */,
+				FAA27A1D23847AF00047EB34 /* M.json in Resources */,
+				FAA27A3023847AF00047EB34 /* V.json in Resources */,
+				FAA27A3923847AF00047EB34 /* LottieLogo2.json in Resources */,
 				FA498639237DC92100E74F35 /* LaunchScreen.storyboard in Resources */,
+				FAA27A2823847AF00047EB34 /* E.json in Resources */,
+				FAA27A4823847AF00047EB34 /* DisableNodesTest.json in Resources */,
+				FAA27A3523847AF00047EB34 /* W.json in Resources */,
+				FAA27A1723847AF00047EB34 /* MotionCorpse-Jrcanest.json in Resources */,
+				FAA27A4723847AF00047EB34 /* PinJump.json in Resources */,
+				FAA27A2023847AF00047EB34 /* U.json in Resources */,
+				FAA27A2223847AF00047EB34 /* R.json in Resources */,
+				FAA27A4423847AF00047EB34 /* setValueTest.json in Resources */,
+				FAA27A2923847AF00047EB34 /* Apostrophe.json in Resources */,
+				FAA27A4523847AF00047EB34 /* Zoom.json in Resources */,
+				FAA27A3E23847AF00047EB34 /* IconTransitions.json in Resources */,
+				FAA27A2B23847AF00047EB34 /* Q.json in Resources */,
+				FAA27A3723847AF00047EB34 /* HamburgerArrow.json in Resources */,
+				FAA27A3C23847AF00047EB34 /* Watermelon.json in Resources */,
+				FAA27A2323847AF00047EB34 /* G.json in Resources */,
+				FAA27A502384AC7C0047EB34 /* 8569-file-save.json in Resources */,
+				FAA27A3A23847AF00047EB34 /* Boat_Loader.json in Resources */,
+				FAA27A4223847AF00047EB34 /* Switch_States.json in Resources */,
+				FAA27A1823847AF00047EB34 /* TwitterHeartButton.json in Resources */,
+				FAA27A3F23847AF00047EB34 /* vcTransition2.json in Resources */,
+				FAA27A4623847AF00047EB34 /* keypathTest.json in Resources */,
+				FAA27A1923847AF00047EB34 /* T.json in Resources */,
+				FAA27A4123847AF00047EB34 /* base64Test.json in Resources */,
+				FAA27A3623847AF00047EB34 /* B.json in Resources */,
+				FAA27A1F23847AF00047EB34 /* Y.json in Resources */,
+				FAA27A3D23847AF00047EB34 /* Keypath.json in Resources */,
+				FAA27A2C23847AF00047EB34 /* D.json in Resources */,
+				FAA27A1423847AF00047EB34 /* Switch.json in Resources */,
+				FAA27A4A23847AF00047EB34 /* timeremap.json in Resources */,
+				FAA27A3323847AF00047EB34 /* Z.json in Resources */,
+				FAA27A3B23847AF00047EB34 /* GeometryTransformTest.json in Resources */,
+				FAA27A4323847AF00047EB34 /* FirstText.json in Resources */,
+				FAA27A2F23847AF00047EB34 /* C.json in Resources */,
+				FAA27A1E23847AF00047EB34 /* L.json in Resources */,
+				FAA27A4C2384AAAA0047EB34 /* Plane.json in Resources */,
+				FAA27A2623847AF00047EB34 /* J.json in Resources */,
+				FAA27A3423847AF00047EB34 /* N.json in Resources */,
+				FAA27A1A23847AF00047EB34 /* A.json in Resources */,
+				FAA27A4923847AF00047EB34 /* LottieLogo1_masked.json in Resources */,
+				FAA27A1523847AF00047EB34 /* TwitterHeart.json in Resources */,
+				FAA27A2123847AF00047EB34 /* K.json in Resources */,
+				FAA27A3823847AF00047EB34 /* vcTransition1.json in Resources */,
 				FA498636237DC92100E74F35 /* Preview Assets.xcassets in Resources */,
+				FAA27A2723847AF00047EB34 /* I.json in Resources */,
 				FA498633237DC92100E74F35 /* Assets.xcassets in Resources */,
+				FAA27A1B23847AF00047EB34 /* X.json in Resources */,
+				FAA27A4023847AF00047EB34 /* LottieLogo1.json in Resources */,
+				FAA27A1623847AF00047EB34 /* 9squares-AlBoardman.json in Resources */,
+				FAA27A1C23847AF00047EB34 /* BlinkingCursor.json in Resources */,
+				FAA27A2D23847AF00047EB34 /* Colon.json in Resources */,
+				FAA27A2523847AF00047EB34 /* S.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -168,11 +432,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA498647237DE27200E74F35 /* Overview.swift in Sources */,
+				FAA275F723846ECA0047EB34 /* StatisticsView.swift in Sources */,
+				FAA275F5238464170047EB34 /* TextView.swift in Sources */,
 				FA498649237E183800E74F35 /* CardView.swift in Sources */,
+				FAA279A2238477F30047EB34 /* ModalView.swift in Sources */,
 				FA49862A237DC91E00E74F35 /* AppDelegate.swift in Sources */,
 				FA498645237DD40600E74F35 /* Helpers.swift in Sources */,
 				FA498641237DC96600E74F35 /* Login.swift in Sources */,
 				FA49862F237DC91E00E74F35 /* EdjoinInterview.xcdatamodeld in Sources */,
+				FAA2799D238475C10047EB34 /* LottieView.swift in Sources */,
 				FA49862C237DC91E00E74F35 /* SceneDelegate.swift in Sources */,
 				FA80796B23834D6000D6246A /* InterviewScreen.swift in Sources */,
 				FA498643237DCAFD00E74F35 /* BlurView.swift in Sources */,
@@ -370,6 +638,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FAA2799E2384770B0047EB34 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.1.5;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FAA2799F2384770C0047EB34 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FAA2799E2384770B0047EB34 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		FA49862D237DC91E00E74F35 /* EdjoinInterview.xcdatamodeld */ = {
